@@ -16,13 +16,20 @@
             <meta name="viewport" content="width=device-width, initial-scale=1">
 
             <nav>
-                <ul>
-                    <li><a href="#Beranda">Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Lookbook</a></li>
-                    <li><a>Visit Us</a></li>
-                    <li><a>Contact</a></li>
-                </ul>
+                <div class="position-relative">
+                    <ul>
+                        <li><a href="#Beranda">Home</a></li>
+                        <li><a onclick="pemeliharaanAlert()">About</a></li>
+                        <li><a onclick="pemeliharaanAlert()">Lookbook</a></li>
+                        <li><a onclick="pemeliharaanAlert()">Visit Us</a></li>
+                        <li><a onclick="pemeliharaanAlert()">Contact</a></li>
+                    </ul>
+                </div>
+                <script>
+                    function pemeliharaanAlert(){
+                        alert("Website ini masih dalam tahap pemeliharaan, beberapa fitur mungkin belum bisa digunakan")
+                    }
+                </script>
                 <div id="Beranda" >
                     <img src="gambar/Desktop - 6.png" class="cover-image">
                 </div>
@@ -36,7 +43,7 @@
                         <h2>Konten 1</h2>
                         <img src="gambar/produk1.jpg" class="featured-image" alt="konten1">
                         <p>Konten 1 adalah konten tentang produk satu</p>
-                        <button class="btn ganti-warna" style="background-color: chocolate; color: white;" >Beli</button>
+                        <button onclick="tampilAlert()" class="btn ganti-warna" style="background-color: chocolate; color: white;" >Beli</button>
                     </article>
                 </div>
                 <div class="card">
@@ -44,8 +51,7 @@
                         <h2>Konten 2</h2>
                         <img src="gambar/produk2.jpg" class="featured-image" alt="konten2">
                         <p>Konten 2 adalah konten tentang produk dua</p>
-                        <button class="btn" style="background-color: chocolate; color: white;" >Beli</button>
-                    </article>
+                        <button onclick="tampilAlert()" class="btn ganti-warna" style="background-color: chocolate; color: white;" >Beli</button>                    </article>
                 </div>
             </div>
             <div id="content">
@@ -54,17 +60,20 @@
                         <h2>Konten 3</h2>
                         <img src="gambar/produk3.jpg" class="featured-image" alt="konten3">
                         <p>Konten 3 adalah konten tentang produk tiga</p>
-                        <button class="btn" style="background-color: chocolate; color: white;" >Beli</button>
-                    </article>
+                        <button onclick="tampilAlert()" class="btn ganti-warna" style="background-color: chocolate; color: white;" >Beli</button>                    </article>
                 </div>
                 <div class="card">
                     <article id="konten4">
                         <h2>Konten 4</h2>
                         <img src="gambar/produk4.jpg" class="featured-image" alt="konten4">
                         <p>Konten 4 adalah konten tentang produk empat</p>
-                        <button class="btn" style="background-color: chocolate; color: white;" >Beli</button>
-                    </article>
+                        <button onclick="tampilAlert()" class="btn ganti-warna" style="background-color: chocolate; color: white;" >Beli</button>                    </article>
                 </div>
+                <script>
+                    function tampilAlert(){
+                        alert("Produk terbeli, terimakasih telah belanja")
+                    }
+                </script>
             </div>
         </main>
 
