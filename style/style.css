@@ -81,6 +81,10 @@ body{
     margin-bottom: 20px;
 }
 
+.rata{
+    text-align: justify;
+}
+
 footer{
     padding: 20px;
     color: #000;
