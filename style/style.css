@@ -70,7 +70,8 @@ body{
     max-height: 300px;
     object-fit: cover;
     object-position: center;
-    border-radius: 5px;
+    border-radius: 15px;
+    padding: 10px;
 }
 
 .card {
@@ -83,6 +84,16 @@ body{
 
 .rata{
     text-align: justify;
+    padding: 20px;
+}
+
+.btn{
+    margin: 10px;
+}
+
+.nama-produk{
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 footer{
